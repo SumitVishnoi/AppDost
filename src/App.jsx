@@ -1,23 +1,23 @@
 import React from 'react'
 import Nav from './components/Nav'
 import Home from './pages/Home'
-import Testimonial from './components/Testimonial'
-import About from './components/About'
-import Services from './components/Services'
+import About from './pages/About'
+import Services from './pages/Services'
 import Footer from './components/Footer'
-import Process from './components/Process'
-import Projects from './components/Projects'
+import Projects from './pages/Projects'
+import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
     <div className='bg-[#0e0e0e] w-full overflow-x-hidden'>
       <Nav />
-      <Home />
-      <Testimonial />
-      <About />
-      <Services />
-      <Process />
-      <Projects />
+
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/career' element={<Projects />}/>
+        <Route path='/services' element={<Services />}/>
+      </Routes>
       <Footer />
     </div>
   )

@@ -267,9 +267,9 @@ const Testimonial = () => {
       label: "CRM Project",
     },
     {
-      img: "https://cdn-icons-png.flaticon.com/512/992/992651.png",
-      count: "2+",
-      label: "AI Projects",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2sLXlyRb17651geH_LAhjVaUWDM98rmWpg&s",
+      count: "2025",
+      label: "Founded Year",
     },
   ];
 
