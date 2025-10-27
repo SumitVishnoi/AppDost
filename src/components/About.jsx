@@ -1,11 +1,44 @@
 import React from "react";
 
 const About = () => {
-  // const data [
-  //   {
-  //     img:""
-  //   }
-  // ]
+  const data = [
+    {
+      number: "1",
+      img: "🎨",
+      title: "UI/UX Design Excellence",
+      description: "Crafting intuitive, user-centric designs that guarantee exceptional user satisfaction and engagement. We believe great design is invisible—it just works."
+    },
+    {
+      number: "2",
+      img: "💻",
+      title: "Custom Software Development",
+      description: "Building robust, scalable enterprise solutions tailored to your unique business requirements. From concept to deployment, we deliver excellence at every stage."
+    },
+    {
+      number: "3",
+      img: "🌐",
+      title: "Web Application Development",
+      description: "Creating responsive, high-performance web applications using the latest frameworks and technologies. Your digital presence, perfected."
+    },
+    {
+      number: "4",
+      img: "📱",
+      title: "Mobile App Development",
+      description: "Developing native and cross-platform mobile applications that users love. iOS, Android, or hybrid—we've got you covered."
+    },
+    {
+      number: "5",
+      img: "🔧",
+      title: "Full-Stack Development",
+      description: "End-to-end development expertise covering frontend elegance, backend power, database optimization, and cloud infrastructure."
+    },
+    {
+      number: "6",
+      img: "🚀",
+      title: "Digital Transformation Consulting",
+      description: "Strategic guidance to help businesses navigate their digital journey, from legacy system modernization to cloud migration."
+    },
+  ]
 
   return (
     <div className="flex flex-col gap-10">
@@ -35,19 +68,17 @@ const About = () => {
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 p-5 gap-8 place-items-center">
-        {[...Array(6)].map((_, i) => (
+        {data.map((data, i) => (
           <div
             key={i}
             className="relative w-[90%] bg-[#a2a1a1af] from-[#8150F0] to-[#B682FF] p-0.5 rounded-xl shadow-xl hover:shadow-[#8150F0]/50 transition-shadow duration-500"
           >
             <div className="bg-white rounded-xl p-10 flex flex-col gap-3 h-full 
                             hover:-translate-y-2 hover:scale-[1.03] transition-all duration-500 ease-out">
-              <div className="text-5xl">🎨</div>
-              <h2 className="text-2xl font-semibold">UI/UX Design Excellence</h2>
+              <div className="text-5xl">{data.img}</div>
+              <h2 className="text-2xl font-semibold">{data.title}</h2>
               <p className="font-medium text-[#848282]">
-                Crafting intuitive, user-centric designs that guarantee
-                exceptional user satisfaction and engagement. We believe great
-                design is invisible—it just works.
+                {data.description}
               </p>
             </div>
           </div>

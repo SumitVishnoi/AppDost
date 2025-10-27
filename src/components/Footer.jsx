@@ -18,16 +18,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between gap-30 mt-5">
-        <ul>
-          <h2 className="font-medium text-xl">Quick Links</h2>
+      <div className="w-full flex flex-wrap md:flex-nowrap justify-center items-start gap-10 lg:gap-30 mt-5 p-2">
+        <ul className="w-1/2 flex flex-col items-center">
+          <h2 className="font-medium text-xl ">Quick Links</h2>
           <li className="text-[#a6a1a1] text-lg">Home</li>
           <li className="text-[#a6a1a1] text-lg">Services</li>
           <li className="text-[#a6a1a1] text-lg">Careers</li>
           <li className="text-[#a6a1a1] text-lg">Blog</li>
           <li className="text-[#a6a1a1] text-lg">Contact</li>
         </ul>
-        <ul>
+        <ul className="w-1/2 flex flex-col items-center">
           <h2 className="font-medium text-lg">Our Services</h2>
           <li className="text-[#a6a1a1] text-lg">Android App Development</li>
           <li className="text-[#a6a1a1] text-lg">Web Development</li>
@@ -36,7 +36,7 @@ const Footer = () => {
           <li className="text-[#a6a1a1] text-lg">Cloud Solutions</li>
           <li className="text-[#a6a1a1] text-lg">Cybersecurity</li>
         </ul>
-        <ul>
+        <ul className="w-1/2 flex flex-col items-center">
           <h2 className="font-medium text-lg">Contact Info</h2>
           <li className="text-[#a6a1a1] text-lg">contact@appdost.in</li>
           <li className="text-[#a6a1a1] text-lg">+91 76350 75422 / +91 11 6929 0750</li>
@@ -45,7 +45,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="flex items-center justify-between border-t-2 border-zinc-600 w-full py-2 px-5">
+      <div className="flex flex-wrap gap-5 items-center justify-between border-t-2 border-zinc-600 w-full py-2 px-5">
         <p>© 2025 AppDost - Complete IT Solution. All rights reserved.</p>
         <div>
             <span>Privacy Policy | </span>
